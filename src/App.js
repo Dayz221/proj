@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import "./app.css"
 import {list} from './girls.js'
 import classNames from "classnames"
 
