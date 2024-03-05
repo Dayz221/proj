@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
 import "./app.css"
-import list from './girls.js'
+import {list} from './girls.js'
 import classNames from "classnames"
 
 const CARD = ({ el, cur, setCur }) => {
   return [
-    <div className={classNames("girlCard", { active: el.id == cur })} onClick={() => setCur(el.id)}>
+    <div className={classNames("girlCard", { active: el.id === cur })} onClick={() => setCur(el.id)}>
       <div className="imgContainer">
         <img src={el.photos[0]} style={{ objectFit: "cover", width: "100%", height: "100%" }} />
         <div className="gName__container">
