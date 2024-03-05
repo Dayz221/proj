@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
-import {list} from './girls.js'
+import { list } from './girls.js'
 import classNames from "classnames"
 
-const CARD = ({ el, cur, setCur }) => {
+const CARD = ({ el, cur, setCur, scroll }) => {
   return [
-    <div className={classNames("girlCard", { active: el.id === cur })} onClick={() => setCur(el.id)}>
+    <div className={classNames("girlCard", { active: el.id === cur })} onClick={() => { setCur(el.id); scroll() }}>
       <div className="imgContainer">
         <img src={el.photos[0]} style={{ objectFit: "cover", width: "100%", height: "100%" }} />
         <div className="gName__container">
@@ -17,7 +17,7 @@ const CARD = ({ el, cur, setCur }) => {
   ]
 }
 
-export default () => {
+export default ({id}) => {
   const [cur, setCur] = useState(0)
   const [curPhoto, setCurPhoto] = useState(0)
   const [girls, setGirls] = useState(list);
@@ -31,6 +31,14 @@ export default () => {
     setCurPhoto(0)
   }
 
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  }
+
   useEffect(() => {
     const timer = setInterval(() => {
       plus()
@@ -39,9 +47,21 @@ export default () => {
     return () => clearInterval(timer);
   })
 
-  return (
+  useEffect(() => {
+    const p = new URLSearchParams(window.location.search)
+    let params = {}
+    p.forEach((param, key) => {
+      params[key] = param
+    })
+
+    if (params.id) {
+      setCur(params.id)
+    }
+  }, [])
+
+  return [
     <div className="app">
-      <h1 className="title">С 8 марта!</h1>
+      <h1 className="title" id="start">С 8 марта!</h1>
       <h2 className="sub">От мальчиков 11Ф</h2>
       <div className="about">
         <div className="about__container">
@@ -54,7 +74,7 @@ export default () => {
             </svg>
           </div>
           <div className="comments">
-            <div className="commentsTitle">{girls[cur].name}</div>
+            <div className="commentsTitle">{girls[cur].name},</div>
             {girls[cur].comments?.map(el => {
               return <div className="comment">{el}</div>
             })}
@@ -65,10 +85,10 @@ export default () => {
       <div className="girlsList">
         <div className="girlsList__container">
           {girls.map(el => {
-            return <CARD el={el} cur={cur} setCur={setCurF} />
+            return <CARD el={el} cur={cur} setCur={setCurF} scroll={scrollTop} />
           })}
         </div>
       </div>
     </div>
-  )
+  ]
 }

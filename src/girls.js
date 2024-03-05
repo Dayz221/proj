@@ -2,32 +2,76 @@ export const list =
 [
     {
         id: 0,
-        name: "ИМЯ2",
-        photos: [
-            "https://the-flow.ru/uploads/images/resize/830x0/adaptiveResize/14/43/28/86/29/475425240cd7.jpg",
-            "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
-        ],
-        count: 2,
-        comments: [
-            "У тебя удивительная улыбка, способная растопить даже самое холодное сердце",
-            "Пусть каждый момент твоей жизни будет наполнен счастьем",
-            "Пусть успех и уверенность сопровождают тебя",
-        ]
-    },
-    {
-        id: 1,
-        name: "ИМЯ3",
+        name: "Елена Александровна",
         photos: [
             "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
         ],
         count: 1,
         comments: [
-            "Lorem lorem lorem lorem lorem",
-            "Lorem lorem lorem lorem lorem",
-            "Lorem lorem lorem lorem lorem",
-            "Lorem lorem lorem lorem lorem",
-            "Lorem lorem lorem lorem lorem",
-            "Lorem lorem lorem lorem lorem"
+            "Пусть каждый день будет состоять из новых впечатлений и позитивных эмоций, где нет места разочарованию, ненависти и усталости!"
+        ]
+    },
+    {
+        id: 1,
+        name: "Вика",
+        photos: [
+            "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
+        ],
+        count: 1,
+        comments: [
+            "У тебя удивительная улыбка, способная растопить даже самое холодное сердце. Продолжай и дальше всех радовать тем, что ты есть!"
+        ]
+    },
+    {
+        id: 2,
+        name: "Айгун",
+        photos: [
+            "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
+        ],
+        count: 1,
+        comments: [
+            "Пусть успех и уверенность сопровождают тебя до самого конца, помогая преодолевать суровые уроки Григорян!"
+        ]
+    },
+    {
+        id: 3,
+        name: "Алия",
+        photos: [
+            "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
+        ],
+        count: 1,
+        comments: [
+            "Пусть каждый момент твоей жизни будет наполнен счастьем и добром на зло всем грустным и несчастным людям!"
+        ]
+    },
+    {
+        id: 4,
+        name: "Регина",
+        photos: [
+            "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
+        ],
+        count: 1,
+        comments: [
+        ]
+    },
+    {
+        id: 5,
+        name: "Олеся",
+        photos: [
+            "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
+        ],
+        count: 1,
+        comments: [
+        ]
+    },
+    {
+        id: 6,
+        name: "Полина",
+        photos: [
+            "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
+        ],
+        count: 1,
+        comments: [
         ]
     }
 ]
