@@ -73,5 +73,18 @@ export const list =
         count: 1,
         comments: [
         ]
-    }
+    },
+    {
+        id: 7,
+        name: "Мантрова",
+        photos: [
+            "/mantrova1.PNG",
+            "https://dota2.ru/img/heroes/pudge/portrait.jpg",
+            "/mantrova.PNG",
+        ],
+        count: 3,
+        comments: [
+            "Press F to pay respect"
+        ]
+    },
 ]
