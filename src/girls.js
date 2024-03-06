@@ -4,7 +4,7 @@ export const list =
         id: 0,
         name: "Елена Александровна",
         photos: [
-            "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
+            "/ElenaAleksandrovna.jpg"
         ],
         count: 1,
         comments: [
@@ -15,9 +15,10 @@ export const list =
         id: 1,
         name: "Вика",
         photos: [
-            "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
+            "/vika.jpg",
+            "/vika1.jpg"
         ],
-        count: 1,
+        count: 2,
         comments: [
             "У тебя удивительная улыбка, способная растопить даже самое холодное сердце. Продолжай и дальше всех радовать тем, что ты есть!"
         ]
@@ -26,7 +27,7 @@ export const list =
         id: 2,
         name: "Айгун",
         photos: [
-            "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
+            "/aygun.jpg"
         ],
         count: 1,
         comments: [
@@ -37,7 +38,7 @@ export const list =
         id: 3,
         name: "Алия",
         photos: [
-            "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
+            "/aliya.jpg"
         ],
         count: 1,
         comments: [
@@ -48,43 +49,23 @@ export const list =
         id: 4,
         name: "Регина",
         photos: [
-            "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
+            "/regina.jpg"
         ],
         count: 1,
         comments: [
+            "Твой удивительный взгляд на жизнь неприменно приведет тебя к успеху и благополучию, поэтому никогда не сдавайся!"
         ]
     },
     {
         id: 5,
-        name: "Олеся",
+        name: "Олеся и Полина",
         photos: [
-            "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
+            "/polinaIOlesya.jpg",
+            "/polinaIOlesya1.jpg"
         ],
-        count: 1,
+        count: 2,
         comments: [
+            "Пусть вы похожи как две капли воды, но у каждой есть свои положительные черты, которые непременно помогут вам в жизни."
         ]
-    },
-    {
-        id: 6,
-        name: "Полина",
-        photos: [
-            "https://newsomsk.ru/images/news/fullhd/2022/01/beabe580adc212da29ff496ab46de503.jpg"
-        ],
-        count: 1,
-        comments: [
-        ]
-    },
-    {
-        id: 7,
-        name: "Мантрова",
-        photos: [
-            "/mantrova1.PNG",
-            "https://dota2.ru/img/heroes/pudge/portrait.jpg",
-            "/mantrova.PNG",
-        ],
-        count: 3,
-        comments: [
-            "Press F to pay respect"
-        ]
-    },
+    }
 ]
